@@ -38,6 +38,12 @@ line-height: 24px;
 color: ##1a1a1c;
 `
 
+const Gap = styled.div`
+  height : ${props => props.height};
+  width: 100%;
+
+`
+
 const Button = styled.button `
   background-color:royalblue;
   color: white;
@@ -62,6 +68,8 @@ function App() {
                   주로 그래픽과 관련된 결과물만 보다가 평소에 사용하는 도구에 삽입이 되니 AI가 디자인하는 시대가 더 피부에 와닿게 되었습니다. 
                   AI는 디자이너에게 기회가 될까요 혹은 위기가 될까요? 그럼 이번 레터도 즐겁게 읽어주세요! 
                 </Body>
+                <Gap height = "20px" />
+                <Button>지금 확인하기</Button>
             </Section>
             </Container>
         </RootContainer>
